@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <div id="myDiv2"></div> 
+  <script>
+    // Correctly using innerHTML after the element exists
+    document.getElementById('myDiv2').innerHTML = 'This text will now show.';
+  </script>
+</body>
+</html>
